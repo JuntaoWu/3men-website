@@ -25,6 +25,21 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .li-order {
+            margin-bottom: 10px
+        }
+
+        .link {
+            color: #191d34
+        }
+
+        .link:hover {
+            color: #ff656a !important;
+            text-decoration-line: underline !important;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -95,7 +110,6 @@
     </header>
 
     <main>
-
         <!-- slider Area Start-->
         <div class="slider-area ">
             <!-- Mobile Menu -->
@@ -112,70 +126,47 @@
             </div>
         </div>
         <!-- slider Area End-->
-
-        <!-- Completed Cases Start -->
-        <div class="completed-cases section-padding3">
+        <div class="team-profile" style="margin-top:50px">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-cases-img  size mb-30">
-                            <img src="assets/img/service/completed_case_1.png" alt="">
-                            <!-- img hover caption -->
-                            <div class="single-cases-cap single-cases-cap2">
-                                <h4><a href="./sheng_direct.html">四川省省直属单位升级程序下载</a></h4>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="blog_right_sidebar">
+                            <aside class="single_sidebar_widget post_category_widget">
+                                <h4 class="widget_title">下载列表</h4>
+                                <ul class="list cat-list">
+                                    <li class="li-order"><a class="link" id='sheng_direct'>省直属单位下载 »</a></li>
+                                    <li class="li-order"><a class="link" id='chengdu_direct'>成都市直属单位及区县下载 »</a></li>
+                                    <li class="li-order"><a class="link" id="meishang_direct">眉山市直属单位及区县升级程序下载 »</a></li>
+                                    <li class="li-order"><a class="link" id='dazhou_direct'>达州市直属单位升级程序下载 »</a></li>
+                                    <li class="li-order"><a class="link" id='tool'>常用工具下载 »</a></li>
+                                </ul>
+                            </aside>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-cases-img  size mb-30">
-                            <img src="assets/img/service/completed_case_2.png" alt="">
-                            <!-- img hover caption -->
-                            <div class="single-cases-cap single-cases-cap2">
-                                <h4><a href="./chengdu_direct.html">成都市直属单位及区县下载</a></h4>
+                    <div class="col-lg-8">
+                        <div class="services-details">
+                            <div class="s-details-caption">
+                                <h2 id="download_title">四川省省直属单位升级程序下载</h2>
+                                <h2 id="download_sub_title">重要提示：请严格按照区域版本下载，否则会出现不可预知的错误。</h2>
+                                <p class="details-pera1" id="download_version">版本SC V17.01 年报程序 </p>
+                                <ul id="download_content">
+                                    <li class="li-order">
+                                        <a class="link" href="http://3mencn.com/3menSoft/SZS/sc_update_zhb.EXE">综合版下载</a>
+                                    </li>
+                                    <li class="li-order">
+                                        <a class="link" href="http://3mencn.com/3menSoft/SZS/sc_update_dlb.EXE">离退休独立版下载</a>
+                                    </li>
+                                    <li class="li-order">
+                                        <a class="link" href="http://3mencn.com/3menSoft/SZS/工资软件调标(2016)手册.rar">工资软件调标(2016)手册</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-cases-img  size mb-30">
-                            <img src="assets/img/service/completed_case_3.png" alt="">
-                            <!-- img hover caption -->
-                            <div class="single-cases-cap single-cases-cap2">
-                                <h4><a href="./meishan_direct.html">眉山市直属单位及区县升级程序下载</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-cases-img  size mb-30">
-                            <img src="assets/img/service/completed_case_4.png" alt="">
-                            <!-- img hover caption -->
-                            <div class="single-cases-cap single-cases-cap2">
-                                <h4><a href="./dazhou_direct.html">达州市直属单位升级程序下载</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-cases-img  size mb-30">
-                            <img src="assets/img/service/completed_case_5.png" alt="">
-                            <!-- img hover caption -->
-                            <div class="single-cases-cap single-cases-cap2">
-                                <h4><a href="./tool.html">常用工具下载</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-cases-img  size mb-30">
-                            <img src="assets/img/service/completed_case_6.png" alt="">
-                            <!-- img hover caption -->
-                            <div class="single-cases-cap single-cases-cap2">
-                                <h4><a href=""></a>更多下载</h4>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Completed Cases end -->
-
     </main>
 
     <footer>
@@ -296,6 +287,115 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sheng_direct").attr("onclick", "changeDownloadContent('sheng');");
+            $("#chengdu_direct").attr("onclick", "changeDownloadContent('chengdu');");
+            $("#meishang_direct").attr("onclick", "changeDownloadContent('meishang');");
+            $("#dazhou_direct").attr("onclick", "changeDownloadContent('dazhou');");
+            $("#tool").attr("onclick", "changeDownloadContent('tool');");
+            let currentDownloadType = sessionStorage.getItem("downloadType");
+            if(currentDownloadType && currentDownloadType != null){
+                changeDownloadContent(currentDownloadType);
+                sessionStorage.clear()
+            }
+            else{
+                changeDownloadContent('sheng');
+            }
+        });
+
+        function changeDownloadContent(type) {
+            switch(type){
+                case 'sheng':
+                    /*set dowanload type color*/
+                    $("#sheng_direct").css('color','#ff656a')
+                    $("#chengdu_direct").css('color','#191d34')
+                    $("#meishang_direct").css('color','#191d34')
+                    $("#dazhou_direct").css('color','#191d34')
+                    $("#tool").css('color','#191d34')
+
+                    $("#download_title").text('四川省省直属单位升级程序下载');
+                    $("#download_sub_title").text('重要提示：请严格按照区域版本下载，否则会出现不可预知的错误。')
+                    $("#download_version").text('版本SC V17.01 年报程序');
+                    // delete already exist li
+                    $('#download_content li').remove();
+                    // add current download type li
+                    $('#download_content').append('<li class="li-order"> <a class="link" href="http://3mencn.com/3menSoft/SZS/sc_update_zhb.EXE">综合版下载</a></li>');
+                    $('#download_content').append('<li class="li-order"> <a class="link" href="http://3mencn.com/3menSoft/SZS/sc_update_dlb.EXE">离退休独立版下载</a></li>');
+                    $('#download_content').append('<li class="li-order"><a class="link" href="http://3mencn.com/3menSoft/SZS/工资软件调标(2016)手册.rar">工资软件调标(2016)手册</a></li>');
+                    break;
+                case 'chengdu':
+                    /*set dowanload type color*/
+                    $("#sheng_direct").css('color','#191d34')
+                    $("#chengdu_direct").css('color','#ff656a')
+                    $("#meishang_direct").css('color','#191d34')
+                    $("#dazhou_direct").css('color','#191d34')
+                    $("#tool").css('color','#191d34')
+
+                    $("#download_title").text('成都市直属单位及区县下载');
+                    $("#download_sub_title").text('重要提示：请严格按照区域版本下载，否则会出现不可预知的错误。')
+                    $("#download_version").text('版本SC V17.01 年报程序');
+                    // delete already exist li
+                    $('#download_content li').remove();
+                    // add current download type li
+                    $('#download_content').append('<li class="li-order">暂不支持下载<p>成都市直属单位需要下载调标升级程序的请在成都市工资软件维护群找技术人员。</p></li>')
+                    $('#download_content').append('<li class="li-order">金牛区、武侯区、新都区、青白江区、金堂县、龙泉驿区、温江区：<br/>请联系业务主管，电话86659577</li>');
+                    $('#download_content').append('<li class="li-order">成都市其它区县：<br/>请联系业务主管，电话86659577 </li>');
+                    break;
+                case 'meishang':
+                    /*set dowanload type color*/
+                    $("#sheng_direct").css('color','#191d34')
+                    $("#chengdu_direct").css('color','#191d34')
+                    $("#meishang_direct").css('color','#ff656a')
+                    $("#dazhou_direct").css('color','#191d34')
+                    $("#tool").css('color','#191d34')
+
+                    $("#download_title").text('眉山市直属单位及区县升级程序下载');
+                    $("#download_sub_title").text('重要提示：请严格按照区域版本下载，否则会出现不可预知的错误。')
+                    $("#download_version").text('版本V17.01(M) 年报版');
+                    // delete already exist li
+                    $('#download_content li').remove();
+                    // add current download type li
+                    $('#download_content').append('<li class="li-order"><a class="link" href="http://3mencn.com/3menSoft/MS/ms_Update.EXE">眉山市直属单位及区县升级程序下載</a></li>');
+                    break;
+                case 'dazhou':
+                    /*set dowanload type color*/
+                    $("#sheng_direct").css('color','#191d34')
+                    $("#chengdu_direct").css('color','#191d34')
+                    $("#meishang_direct").css('color','#191d34')
+                    $("#dazhou_direct").css('color','#ff656a')
+                    $("#tool").css('color','#191d34')
+
+                    $("#download_title").text('达州市直属单位升级程序下载');
+                    $("#download_sub_title").text('重要提示：请严格按照区域版本下载，否则会出现不可预知的错误。')
+                    $("#download_version").text('版本V17.01(M) 年报版');
+                    // delete already exist li
+                    $('#download_content li').remove();
+                    // add current download type li
+                    $('#download_content').append('<li class="li-order"><a class="link" href="http://3mencn.com/3menSoft/DZ/dz_update.EXE">达州市直属单位升级程序下载</a></li>');
+                    break;
+                case 'tool':
+                     /*set dowanload type color*/
+                     $("#sheng_direct").css('color','#191d34')
+                    $("#chengdu_direct").css('color','#191d34')
+                    $("#meishang_direct").css('color','#191d34')
+                    $("#dazhou_direct").css('color','#191d34')
+                    $("#tool").css('color','#ff656a')
+
+                    $("#download_title").text('常用工具下載');
+                    $("#download_sub_title").text('')
+                    $("#download_version").text('');
+                    // delete already exist li
+                    $('#download_content li').remove();
+                    // add current download type li
+                    $('#download_content').append('<li class="li-order"><a class="link" href="http://www.3men.net/3menSoft/SZS/GZJJ_SB.zip">工资基金与社保数据对比软件 </a></li>');
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    </script>
 
 </body>
 

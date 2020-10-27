@@ -187,11 +187,17 @@
                             <div class="single-profile-back-last">
                                 <h2>下载中心</h2>
                                 <ul>
-                                    <li class="li-order"><a class="link" href="./sheng_direct.html">省直属单位下载 »</a></li>
+                                    <!--<li class="li-order"><a class="link" href="./sheng_direct.html">省直属单位下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./chengdu_direct.html">成都市直属单位及区县下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./meishan_direct.html">眉山市直属单位及区县升级程序下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./dazhou_direct.html">达州市直属单位升级程序下载 »</a></li>
-                                    <li class="li-order"><a class="link" href="./tool.html">常用工具下载 »</a></li>
+                                    <li class="li-order"><a class="link" href="./tool.html">常用工具下载 »</a></li>-->
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('sheng')" href="./download_center.html" >省直属单位下载 »</a></li>
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('chengdu')" href="./download_center.html" >成都市直属单位及区县下载 »</a></li>
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('meishang')" href="./download_center.html" >眉山市直属单位及区县升级程序下载 »</a></li>
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('dazhou')" href="./download_center.html" >达州市直属单位升级程序下载 »</a></li>
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('tool')" href="./download_center.html" >常用工具下载 »</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -501,6 +507,11 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        function setDownloadType(type){
+            sessionStorage.setItem("downloadType",type);
+        }
+    </script>
 
 </body>
 
