@@ -24,9 +24,10 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        .li-order{
+        .li-order {
             margin-bottom: 10px
         }
+
         .link {
             color: #191d34
         }
@@ -35,8 +36,80 @@
             color: #ff656a;
             text-decoration-line: underline
         }
-        .download-center-div h2::before{
+
+        .download-center-div h2::before {
             background: #A163A9 !important
+        }
+
+        .header-area .header-bottom {
+            padding: 12px 0;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .header-area .header-bottom.header-sticky {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .header-area .header-bottom.header-sticky .container-fluid {
+            max-width: 1000px;
+        }
+
+        .main-header .main-menu ul li a {
+            padding: 17px;
+            color: white;
+        }
+
+        .header-sticky.sticky-bar.sticky .main-menu ul>li>a {
+            padding: 15px;
+            color: #613183;
+        }
+
+        .header-sticky.sticky-bar.sticky a {
+            color: #A163A8;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .slider-area .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .team-profile .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .we-trusted-area .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .services-area .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .recent-area .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .request-back-area .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .footer-area .container {
+            max-width: 1000px;
+            margin: auto;
         }
     </style>
 </head>
@@ -93,7 +166,7 @@
                             </div>
                             <div class="col-xl-2 col-lg-3 col-md-3">
                                 <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="#" style="color:#002e5b"><img src="assets/img/logo/导航栏- icon-联系方式.png" alt="">666-888-000</a>
+                                    <a href="#"><img src="assets/img/logo/导航栏- icon-联系方式.png" alt="">666-888-000</a>
                                 </div>
                             </div>
                             <!-- Mobile Menu -->
@@ -114,13 +187,15 @@
         <div class="slider-area ">
             <!-- Mobile Menu -->
             <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/banner/three_men_banner.png">
+                <div class="single-slider slider-height d-flex align-items-center"
+                    data-background="assets/img/banner/three_men_banner.png">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-8">
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay=".6s" style="width: 490px;height: 92px;font-size: 50px; font-family: PingFangSC-Semibold, PingFang SC;
-                                    font-weight: 600; color: #FFFFFF; line-height: 92px; margin-bottom: 31px">为您提供最优服务</h1>
+                                    font-weight: 600; color: #FFFFFF; line-height: 92px; margin-bottom: 31px">为您提供最优服务
+                                    </h1>
                                     <p data-animation="fadeInLeft" data-delay=".4s" style="font-size: 10px;font-family: PingFangSC-Regular, PingFang SC;font-weight: 400;
                                     color: #FFFFFF;line-height: 31px;letter-spacing: 12px;margin-bottom: 31px">3MEN
                                         TECHNOLOGY</p>
@@ -202,15 +277,20 @@
                                     <li class="li-order"><a class="link" href="./meishan_direct.html">眉山市直属单位及区县升级程序下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./dazhou_direct.html">达州市直属单位升级程序下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./tool.html">常用工具下载 »</a></li>-->
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('sheng')" href="./download_center.html">省直属单位下载
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('sheng')"
+                                            href="./download_center.html">省直属单位下载
                                             »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('chengdu')" href="./download_center.html">成都市直属单位及区县下载
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('chengdu')"
+                                            href="./download_center.html">成都市直属单位及区县下载
                                             »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('meishang')" href="./download_center.html">眉山市直属单位及区县升级程序下载
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('meishang')"
+                                            href="./download_center.html">眉山市直属单位及区县升级程序下载
                                             »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('dazhou')" href="./download_center.html">达州市直属单位升级程序下载
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('dazhou')"
+                                            href="./download_center.html">达州市直属单位升级程序下载
                                             »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('tool')" href="./download_center.html">常用工具下载
+                                    <li class="li-order"><a class="link" onclick="setDownloadType('tool')"
+                                            href="./download_center.html">常用工具下载
                                             »</a></li>
 
                                 </ul>
@@ -233,30 +313,32 @@
                     </div>
                     <div class="col-xl-6 col-lg-6" style="padding:0px;">
                         <div style="padding-left:52px;display:flex;flex-direction: column">
-                            <h2 style="margin-bottom: 40px">我们服务超过6000+客户</h2>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四川省三夫科技开发有限公司成立于1999年，是一家从事计算机软件及互联网产品研发的科技企业。公司拥有完善的服务网络体系、丰富的行业经验积累、
-                                优秀的人才储备、持续的研发创新能力、经过二十余年发展、已成为专业的政务行业信息化解决方案提供商。
+                            <h2 style="margin-bottom: 30px">我们服务超过60000+客户</h2>
+                            <p>
+                                四川省三夫科技开发有限公司成立于1999年，是一家从事计算机软件及互联网产品研发的科技企业。公司拥有完善的服务网络体系、丰富的行业经验积累、
+                                优秀的人才储备、持续的研发创新能力、经过二十余年发展、已成为专业的政务行业信息化解决方案提供商。</p>
+                            <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0;">在工资业务领域，三夫科技打造的工资业务信息化整体解决方案长期服务于四川省人社厅、四川省委组织部、成都市人社局、成都市委组织部、
+                                四川省税务局等客户，覆盖用户单位60000多余家，积累数据约400GB，见证了工资业务二十年来的发展演进。
                             </p>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在工资业务领域，三夫科技打造的工资业务信息化整体解决方案长期服务于四川省人社厅、四川省委组织部、成都市人社局、成都市委组织部、
-                                四川省税务局等客户，覆盖用户单位6000多于家，积累数据约400GB，见证了工资业务二十年来的发展演进。
-                            </p>
-                            <a href="#" style="border-radius: 4px; border:1px solid #A163A9; color: #A163A9; padding: 5px 20px; margin-left: auto">了解更多</a>
+                            <a href="#"
+                                style="border-radius: 4px; border:1px solid #A163A9; color: #A163A9; padding: 5px 20px; margin-left: auto; margin-top: 10px;">了解更多</a>
                         </div>
                     </div>
                 </div>
                 <div class="row d-flex">
                     <div class="col-xl-6 col-lg-6" style="padding:0px">
                         <div style="padding-right:52px;display:flex;flex-direction: column;padding-top: 30px">
-                            <h2 style="margin-bottom: 40px">荣誉资质</h2>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;研制完成了《三夫网吧智能监查管理系统》、《精通软件——成都工资福利离退休管理系统》、《四川省机关事业单位工资信息管理系统》、《交通违章摄像取证信息管理系统》、《四川省公共图书馆业务管理系统》、
+                            <h2 style="margin-bottom: 30px">荣誉资质</h2>
+                            <p>研制完成了《三夫网吧智能监查管理系统》、《精通软件——成都工资福利离退休管理系统》、《四川省机关事业单位工资信息管理系统》、《交通违章摄像取证信息管理系统》、《四川省公共图书馆业务管理系统》、
                                 《四川省高校及中专招生信息采集系统》、《四川省移动通信公司人力资源测评系统等》
                             </p>
-                            <a href="#" style="border-radius: 4px; border:1px solid #A163A9; color: #A163A9; padding: 5px 20px;  margin-right: auto">了解更多</a>
+                            <a href="#"
+                                style="border-radius: 4px; border:1px solid #A163A9; color: #A163A9; padding: 5px 20px;  margin-right: auto">了解更多</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6" style="padding:0px">
                         <div class="trusted-img">
-                            <img src="assets/img/team/图片-公司介绍1.png" alt="">
+                            <img src="assets/img/team/图片-公司介绍2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -319,7 +401,8 @@
                 <div class="row justify-content-center">
                     <div class="room-btn">
                         <!--<a href="services.html" class="border-btn">More Services</a>-->
-                        <a href="services.html" style="border-radius: 4px; border:1px solid #A163A9; color: #A163A9; padding: 5px 20px; margin-left: auto">了解更多</a>
+                        <a href="#"
+                            style="border-radius: 4px; border:1px solid #A163A9; color: #A163A9; padding: 5px 20px; margin-left: auto">了解更多</a>
                     </div>
                 </div>
             </div>
@@ -378,7 +461,7 @@
         <!-- Recent Area End-->
 
         <!-- Request Back Start -->
-        <div class="request-back-area section-padding30">
+        <div class="request-back-area section-padding30" style="background-color: #613183;">
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-4 col-lg-5 col-md-5">
@@ -435,7 +518,8 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/icon/qrcode_gh.jpg" alt="" style="width: 200px;"></a>
+                                    <a href="index.html"><img src="assets/img/icon/qrcode_gh.jpg" alt=""
+                                            style="width: 200px;"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -463,11 +547,9 @@
                             <div class="footer-tittle">
                                 <h4>服务</h4>
                                 <ul>
-                                    <li><a href="#">Commercial Cleaning</a></li>
-                                    <li><a href="#">Office Cleaning</a></li>
-                                    <li><a href="#">Building Cleaning</a></li>
-                                    <li><a href="#">Floor Cleaning</a></li>
-                                    <li><a href="#">Apartment Cleaning</a></li>
+                                    <li><a href="#">升级服务</a></li>
+                                    <li><a href="#">文档服务</a></li>
+                                    <li><a href="#">数据库系统维护服务</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -496,7 +578,8 @@
                             <div class="footer-copy-right text-center">
                                 <p>
                                     Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved
+                                </p>
                             </div>
                         </div>
                     </div>
