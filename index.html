@@ -24,6 +24,16 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
+        @media (min-width: 1600px) {
+            .container-fluid {
+                max-width: 1170px !important;
+            }
+
+            .container {
+                max-width: 1170px !important;
+            }
+        }
+
         .li-order {
             margin-bottom: 10px
         }
@@ -403,7 +413,7 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">首页</a></li>
-                                            <li><a href="#service">产品与服务</a></li>
+                                            <li><a href="#product">产品与服务</a></li>
                                             <li><a href="./download_center.html">下载中心</a></li>
                                             <li><a href="#about">新闻资讯</a></li>
                                             <li><a href="#feedback">意见建议</a>
@@ -424,7 +434,7 @@
                                     <a href="#">
                                         <img src="assets/img/logo/导航栏- icon-联系方式.png" alt="" id="contactlog">
                                         &nbsp;&nbsp;
-                                        <span style="margin-left:5px">666-888-000</span>
+                                        <span style="margin-left:5px">8665-9577</span>
                                     </a>
                                 </div>
                             </div>
@@ -472,6 +482,7 @@
         </div>
         <!-- slider Area End-->
 
+        <a name="product"></a>
         <!-- Team-profile Start -->
         <div class="team-profile team-padding" id="teamProfile">
             <div class="container">
@@ -543,7 +554,7 @@
         <!-- We Trusted Start-->
         <div class="we-trusted-area trusted-padding">
             <div class="container">
-                <div class="row d-flex">
+                <div class="row" style="margin-left: 0; margin-right: 0;">
                     <div class="col-xl-6 col-lg-6" style="padding:0px">
                         <div class="trusted-img">
                             <img src="assets/img/team/图片-公司介绍1.png" alt="">
@@ -559,18 +570,18 @@
                                 在工资业务领域，三夫科技打造的工资业务信息化整体解决方案长期服务于四川省人社厅、四川省委组织部、成都市人社局、成都市委组织部、
                                 四川省税务局等客户，覆盖用户单位60000多余家，积累数据约400GB，见证了工资业务二十年来的发展演进。
                             </p>
-                            <a href="#" class="button_more" style="margin-left: auto;margin-top: 10px;">了解更多</a>
+                            <a href="javascript:void()" class="button_more" style="margin-left: auto;margin-top: 10px;">了解更多</a>
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex">
+                <div class="row" style="margin-left: 0; margin-right: 0;">
                     <div class="col-xl-6 col-lg-6" style="padding:0px">
                         <div style="padding-right:52px;display:flex;flex-direction: column;padding-top: 30px">
                             <h2 style="margin-bottom: 30px">荣誉资质</h2>
                             <p>研制完成了《三夫网吧智能监查管理系统》、《精通软件——成都工资福利离退休管理系统》、《四川省机关事业单位工资信息管理系统》、《交通违章摄像取证信息管理系统》、《四川省公共图书馆业务管理系统》、
                                 《四川省高校及中专招生信息采集系统》、《四川省移动通信公司人力资源测评系统等》
                             </p>
-                            <a href="#" class="button_more" style="margin-right: auto">了解更多</a>
+                            <a href="javascript:void()" class="button_more" style="margin-right: auto">了解更多</a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6" style="padding:0px">
@@ -584,9 +595,9 @@
         </div>
         <!-- We Trusted End-->
 
+        <a name="about"></a>
         <!-- services Area Start-->
         <div class="services-area section-padding2">
-            <a name="service"></a>
             <div class="container">
                 <!-- section tittle -->
                 <div class="row">
@@ -645,7 +656,7 @@
                 <div class="row justify-content-center">
                     <div class="room-btn">
                         <!--<a href="services.html" class="border-btn">More Services</a>-->
-                        <a href="#" class="button_more" style="margin-left: auto">了解更多</a>
+                        <a href="javascript:void()" class="button_more" style="margin-left: auto">了解更多</a>
                     </div>
                 </div>
             </div>
@@ -654,7 +665,6 @@
 
         <!-- Recent Area Start -->
         <div class="recent-area section-paddingt">
-            <a name="about"></a>
             <div class="container">
                 <!-- section tittle -->
                 <div class="row">
@@ -704,9 +714,9 @@
         </div>
         <!-- Recent Area End-->
 
+        <a name="feedback"></a>
         <!-- Request Back Start -->
         <div class="request-back-area section-padding30" style="background-color: #613183;">
-            <a name="feedback"></a>
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-xl-4 col-lg-5 col-md-5">
@@ -782,9 +792,9 @@
                                 <h4>公司</h4>
                                 <ul>
                                     <li><a href="index.html">首页</a></li>
-                                    <li><a href="about.html">关于</a></li>
-                                    <li><a href="#">下载中心</a></li>
-                                    <li><a href="contact.html"> 联系我们</a></li>
+                                    <li><a href="#about">关于</a></li>
+                                    <li><a href="download_center.html">下载中心</a></li>
+                                    <li><a href="#feedback"> 联系我们</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -794,9 +804,9 @@
                             <div class="footer-tittle">
                                 <h4>服务</h4>
                                 <ul>
-                                    <li><a href="#">升级服务</a></li>
-                                    <li><a href="#">文档服务</a></li>
-                                    <li><a href="#">数据库系统维护服务</a></li>
+                                    <li><a href="#about">升级服务</a></li>
+                                    <li><a href="#about">文档服务</a></li>
+                                    <li><a href="#about">数据库系统维护服务</a></li>
                                 </ul>
                             </div>
                         </div>
