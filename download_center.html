@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>三夫科技-下载中心</title>
+    <title>四川省三夫科技开发有限公司</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,6 +39,11 @@
             text-decoration-line: underline !important;
             cursor: pointer;
         }
+        
+        .header-sticky.sticky {
+            background-color: #2a163d !important;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -66,8 +71,16 @@
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-1 col-md-1">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/3menlogo.gif" alt=""></a>
+                                <!-- <div class="logo">
+                                    <a href="index.html"><img src="assets/img/logo/导航栏-icon- logo.png" alt=""></a>
+                                </div> -->
+                                <div class="logo sticky-style-1" id="logoId">
+                                    <span id="imageLog">
+                                        <img src="assets/img/logo/导航栏-icon- logo.png" alt="">
+                                    </span>
+                                    <!-- <span id="aboutLog" style="font-weight:bold;font-size:20px">
+                                        关于 <span style="font-weight:300;font-size:16px">ABOUT US</span>
+                                    </span> -->
                                 </div>
                             </div>
                             <div class="col-xl-8 col-lg-8 col-md-8">
@@ -76,10 +89,10 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">首页</a></li>
-                                            <li><a href="about.html">新闻资讯</a></li>
-                                            <li><a href="services.html">产品与服务</a></li>
+                                            <li><a href="index.html#about">新闻资讯</a></li>
+                                            <li><a href="index.html#product">产品与服务</a></li>
                                             <li><a href="./download_center.html">下载中心</a></li>
-                                            <li><a href="blog.html">意见建议</a>
+                                            <li><a href="index.html#feedback">意见建议</a>
                                             </li>
                                             <!-- <li><a href="#">Pages</a>
                                                     <ul class="submenu">
@@ -113,7 +126,7 @@
         <!-- slider Area Start-->
         <div class="slider-area ">
             <!-- Mobile Menu -->
-            <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/gallery_hero.jpg">
+            <div class="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/banner/three_men_banner.png" style="margin-top: -90px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">
@@ -195,14 +208,14 @@
                                 <h4>公司</h4>
                                 <ul>
                                     <li><a href="index.html">首页</a></li>
-                                    <li><a href="about.html">关于</a></li>
+                                    <li><a href="index.html#about">关于</a></li>
                                     <li><a href="#">下载中心</a></li>
-                                    <li><a href="contact.html"> 联系我们</a></li>
+                                    <li><a href="index.html#feedback"> 意见建议</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                    <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
                                 <h4>服务</h4>
@@ -215,7 +228,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
