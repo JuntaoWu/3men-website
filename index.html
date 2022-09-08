@@ -1,853 +1,1059 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>四川省三夫科技开发有限公司</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <style>
-        @media (min-width: 1600px) {
-            .container-fluid {
-                max-width: 1170px !important;
-            }
-
-            .container {
-                max-width: 1170px !important;
-            }
-        }
-
-        .li-order {
-            margin-bottom: 10px
-        }
-
-        .link {
-            color: #191d34
-        }
-
-        .link:hover {
-            color: #ff656a;
-            text-decoration-line: underline
-        }
-
-        .download-center-div h2::before {
-            background: #A163A9 !important
-        }
-
-        .header-area .header-bottom {
-            padding: 12px 0;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .header-area .header-bottom.header-sticky {
-            width: 100% !important;
-            max-width: 100% !important;
-            background-color: #2a163d !important;
-        }
-
-        .header-area .header-bottom.header-sticky .container-fluid {
-            max-width: 1000px;
-        }
-
-        .main-header .main-menu ul li a {
-            padding: 17px;
-            color: white;
-        }
-
-        .header-sticky.sticky-bar.sticky .main-menu ul>li>a {
-            padding: 15px;
-            color: #613183;
-        }
-
-        .header-sticky.sticky-bar.sticky a {
-            color: #A163A8;
-        }
-
-        header {
-            background: rgba(0, 0, 0, 0.2);
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        .slider-area .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .team-profile .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .we-trusted-area .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .services-area .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .recent-area .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .request-back-area .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .footer-area .container {
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .main-header .main-menu ul li:hover>a {
-            color: white;
-            font-weight: bolder
-        }
-
-        .main-header .main-menu ul li a {
-            opacity: 0.8
-        }
-
-        .contact a:hover {
-            font-size: 18px
-        }
-
-        #productionLog {
-            color: #a163a8
-        }
-
-        #aboutLog {
-            color: #a163a8
-        }
-
-        .sticky-style-1 #imageLog {
-            display: inline
-        }
-
-        .sticky-style-1 #productionLog {
-            display: none
-        }
-
-        .sticky-style-1 #aboutLog {
-            display: none
-        }
-
-        .sticky-style-2 #imageLog {
-            display: none
-        }
-
-        .sticky-style-2 #productionLog {
-            display: inline
-        }
-
-        .sticky-style-2 #aboutLog {
-            display: none
-        }
-
-        .sticky-style-3 #imageLog {
-            display: none
-        }
-
-        .sticky-style-3 #productionLog {
-            display: none
-        }
-
-        .sticky-style-3 #aboutLog {
-            display: inline
-        }
-
-        .header-sticky.sticky #contactlog {
-            filter: drop-shadow(#A163A9 30px 0);
-            position: absolute;
-            left: 50px;
-        }
-
-        /**backend image**/
-        .single-slider {
-            background-image: url('assets/img/banner/three_men_banner.png')
-        }
-
-        /***工资业务*/
-        .team-profile .single-profile .single-profile-front .profile-caption h4 a:hover {
-            color: #A163A9
-        }
-
-        .gongziyewu {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
-        .gongziyewu:hover {
-            color: #A163A9
-        }
-
-        /**下载中心**/
-        .team-profile .single-profile .single-profile-back-last {
-            padding: 10px 12px 15px 12px
-        }
-
-        .team-profile .single-profile .single-profile-back-last a {
-            font-size: 16px;
-            font-weight: 500;
-            color: #333333
-        }
-
-        .team-profile .single-profile .single-profile-back-last a:hover {
-            color: #A163A9;
-            text-decoration-line: none
-        }
-
-        .button_more {
-            border-radius: 4px;
-            border: 1px solid #A163A9;
-            color: #A163A9;
-            padding: 5px 20px;
-            font-size: 16px;
-            font-weight: 400
-        }
-
-        .button_more:hover {
-            background: linear-gradient(180deg, #AE69AB 0%, #995FA7 100%);
-            font-weight: 600;
-            color: white
-        }
-
-        /**我们的服务**/
-        #our_service_1_1 {
-            display: inline
-        }
-
-        #our_service_1_2 {
-            display: none
-        }
-
-        #our_service_1:hover #our_service_1_1 {
-            display: none
-        }
-
-        #our_service_1:hover #our_service_1_2 {
-            display: inline
-        }
-
-        #our_service_2_1 {
-            display: inline
-        }
-
-        #our_service_2_2 {
-            display: none
-        }
-
-        #our_service_2:hover #our_service_2_1 {
-            display: none
-        }
-
-        #our_service_2:hover #our_service_2_2 {
-            display: inline
-        }
-
-        #our_service_3_1 {
-            display: inline
-        }
-
-        #our_service_3_2 {
-            display: none
-        }
-
-        #our_service_3:hover #our_service_3_1 {
-            display: none
-        }
-
-        #our_service_3:hover #our_service_3_2 {
-            display: inline
-        }
-
-
-        .services-area .single-services .services-caption h4 {
-            font-size: 16px;
-            color: #333333
-        }
-
-        .recent-area .single-recent-cap .recent-cap {
-            padding: 10px 20px 20px 10px;
-        }
-
-        .form-wrapper .nice-select {
-            border: 2px solid #FFFFFF;
-            color: #FFFFFF
-        }
-
-        .nice-select .option {
-            color: #333333
-        }
-
-        .nice-select .option.selected {
-            color: #A163A9
-        }
-
-        .send-btn {
-            border-radius: 8px;
-            background-color: transparent;
-            border: 1px solid #ffffff
-        }
-
-        .send-btn::before {
-            background: linear-gradient(180deg, #AE69AB 0%, #995FA7 100%);
-        }
-
-        .send-btn:hover {
-            border: none
-        }
-
-        .form-wrapper .nice-select::after {
-            color: #FFFFFF;
-            border-bottom: 2px solid #FFFFFF;
-            border-right: 2px solid #FFFFFF
-        }
-
-        .team-profile {
-            background: #FFFFFF
-        }
-
-        .product-btn {
-            width: 200px;
-            height: 56px;
-            border-radius: 8px;
-            background-color: transparent;
-            border: 1px solid #ffffff
-        }
-
-        .product-btn:hover {
-            border: none
-        }
-
-        .btn::before {
-            background: linear-gradient(180deg, #AE69AB 0%, #995FA7 100%);
-        }
+      @media (min-width: 1600px) {
+        .container-fluid {
+          max-width: 1170px !important;
+        }
+
+        .container {
+          max-width: 1170px !important;
+        }
+      }
+
+      .li-order {
+        margin-bottom: 10px;
+      }
+
+      .link {
+        color: #191d34;
+      }
+
+      .link:hover {
+        color: #ff656a;
+        text-decoration-line: underline;
+      }
+
+      .download-center-div h2::before {
+        background: #a163a9 !important;
+      }
+
+      .header-area .header-bottom {
+        padding: 12px 0;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .header-area .header-bottom.header-sticky {
+        width: 100% !important;
+        max-width: 100% !important;
+        background-color: #2a163d !important;
+      }
+
+      .header-area .header-bottom.header-sticky .container-fluid {
+        max-width: 1000px;
+      }
+
+      .main-header .main-menu ul li a {
+        padding: 17px;
+        color: white;
+      }
+
+      .header-sticky.sticky-bar.sticky .main-menu ul > li > a {
+        padding: 15px;
+        color: white;
+      }
+
+      .header-sticky.sticky-bar.sticky a {
+        color: white;
+      }
+
+      header {
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .slider-area .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .team-profile .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .we-trusted-area .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .services-area .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .recent-area .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .request-back-area .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .footer-area .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .main-header .main-menu ul li:hover > a {
+        color: white;
+        font-weight: bolder;
+      }
+
+      .main-header .main-menu ul li a {
+        opacity: 0.8;
+      }
+
+      .contact a:hover {
+        font-size: 18px;
+      }
+
+      #productionLog {
+        color: #a163a8;
+      }
+
+      #aboutLog {
+        color: #a163a8;
+      }
+
+      .sticky-style-1 #imageLog {
+        display: inline;
+      }
+
+      .sticky-style-1 #productionLog {
+        display: none;
+      }
+
+      .sticky-style-1 #aboutLog {
+        display: none;
+      }
+
+      .sticky-style-2 #imageLog {
+        display: none;
+      }
+
+      .sticky-style-2 #productionLog {
+        display: inline;
+      }
+
+      .sticky-style-2 #aboutLog {
+        display: none;
+      }
+
+      .sticky-style-3 #imageLog {
+        display: none;
+      }
+
+      .sticky-style-3 #productionLog {
+        display: none;
+      }
+
+      .sticky-style-3 #aboutLog {
+        display: inline;
+      }
+
+      .header-sticky.sticky #contactlog {
+        filter: drop-shadow(#a163a9 1px 0);
+        position: absolute;
+        left: 50px;
+      }
+
+      /**backend image**/
+      .single-slider {
+        background-image: url("assets/img/banner/three_men_banner.png");
+      }
+
+      /***工资业务*/
+      .team-profile
+        .single-profile
+        .single-profile-front
+        .profile-caption
+        h4
+        a:hover {
+        color: #a163a9;
+      }
+
+      .gongziyewu {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .gongziyewu:hover {
+        color: #a163a9;
+      }
+
+      /**下载中心**/
+      .team-profile .single-profile .single-profile-back-last {
+        padding: 10px 12px 15px 12px;
+      }
+
+      .team-profile .single-profile .single-profile-back-last a {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333333;
+      }
+
+      .team-profile .single-profile .single-profile-back-last a:hover {
+        color: #a163a9;
+        text-decoration-line: none;
+      }
+
+      .button_more {
+        border-radius: 4px;
+        border: 1px solid #a163a9;
+        color: #a163a9;
+        padding: 5px 20px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .button_more:hover {
+        background: linear-gradient(180deg, #ae69ab 0%, #995fa7 100%);
+        font-weight: 600;
+        color: white;
+      }
+
+      /**我们的服务**/
+      #our_service_1_1 {
+        display: inline;
+      }
+
+      #our_service_1_2 {
+        display: none;
+      }
+
+      #our_service_1:hover #our_service_1_1 {
+        display: none;
+      }
+
+      #our_service_1:hover #our_service_1_2 {
+        display: inline;
+      }
+
+      #our_service_2_1 {
+        display: inline;
+      }
+
+      #our_service_2_2 {
+        display: none;
+      }
+
+      #our_service_2:hover #our_service_2_1 {
+        display: none;
+      }
+
+      #our_service_2:hover #our_service_2_2 {
+        display: inline;
+      }
+
+      #our_service_3_1 {
+        display: inline;
+      }
+
+      #our_service_3_2 {
+        display: none;
+      }
+
+      #our_service_3:hover #our_service_3_1 {
+        display: none;
+      }
+
+      #our_service_3:hover #our_service_3_2 {
+        display: inline;
+      }
+
+      .services-area .single-services .services-caption h4 {
+        font-size: 16px;
+        color: #333333;
+      }
+
+      .recent-area .single-recent-cap .recent-cap {
+        padding: 10px 20px 20px 10px;
+      }
+
+      .form-wrapper .nice-select {
+        border: 2px solid #ffffff;
+        color: #ffffff;
+      }
+
+      .nice-select .option {
+        color: #333333;
+      }
+
+      .nice-select .option.selected {
+        color: #a163a9;
+      }
+
+      .send-btn {
+        border-radius: 8px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+      }
+
+      .send-btn::before {
+        background: linear-gradient(180deg, #ae69ab 0%, #995fa7 100%);
+      }
+
+      .send-btn:hover {
+        border: none;
+      }
+
+      .form-wrapper .nice-select::after {
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+      }
+
+      .team-profile {
+        background: #ffffff;
+      }
+
+      .product-btn {
+        width: 200px;
+        height: 56px;
+        border-radius: 8px;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+      }
+
+      .product-btn:hover {
+        border: none;
+      }
+
+      .btn::before {
+        background: linear-gradient(180deg, #ae69ab 0%, #995fa7 100%);
+      }
     </style>
     <script>
-        window.addEventListener("scroll", function (e) {
-            var teamprofile = document.getElementById("teamProfile");
-            if (teamprofile.offsetTop - document.documentElement.scrollTop < -680) {
-                $("#logoId").removeClass("sticky-style-1");
-                $("#logoId").removeClass("sticky-style-2");
-                $("#logoId").addClass("sticky-style-3");
-            }
-            else if ((teamprofile.offsetTop - document.documentElement.scrollTop < 0) || $(".header-sticky.sticky").is(":visible")) {
-                $("#logoId").removeClass("sticky-style-1");
-                $("#logoId").removeClass("sticky-style-3");
-                $("#logoId").addClass("sticky-style-2");
-            }
-            else {
-                $("#logoId").removeClass("sticky-style-3");
-                $("#logoId").removeClass("sticky-style-2");
-                $("#logoId").addClass("sticky-style-1");
-            }
-
-
-        })
+      window.addEventListener("scroll", function (e) {
+        var teamprofile = document.getElementById("teamProfile");
+        if (teamprofile.offsetTop - document.documentElement.scrollTop < -680) {
+          $("#logoId").removeClass("sticky-style-1");
+          $("#logoId").removeClass("sticky-style-2");
+          $("#logoId").addClass("sticky-style-3");
+        } else if (
+          teamprofile.offsetTop - document.documentElement.scrollTop < 0 ||
+          $(".header-sticky.sticky").is(":visible")
+        ) {
+          $("#logoId").removeClass("sticky-style-1");
+          $("#logoId").removeClass("sticky-style-3");
+          $("#logoId").addClass("sticky-style-2");
+        } else {
+          $("#logoId").removeClass("sticky-style-3");
+          $("#logoId").removeClass("sticky-style-2");
+          $("#logoId").addClass("sticky-style-1");
+        }
+      });
     </script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Preloader Start -->
     <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/logo/logo.png" alt="">
-                </div>
-            </div>
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img src="assets/img/logo/logo-spin.png" alt="" />
+          </div>
         </div>
+      </div>
     </div>
     <!-- Preloader Start -->
 
     <header>
-        <!-- Header Start -->
-        <div class="header-area">
-            <div class="main-header " style="background-color:rgba(0, 0, 0, 0.2)">
-                <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-1 col-md-1 ">
-                                <div class="logo sticky-style-1" id="logoId">
-                                    <span id="imageLog">
-                                        <img src="assets/img/logo/导航栏-icon- logo.png" alt="">
-                                    </span>
-                                    <span id="productionLog" style="font-weight:bold;font-size:20px">
-                                        产品 <span style="font-weight:300;font-size:16px">PRODUCT</span>
-                                    </span>
-                                    <span id="aboutLog" style="font-weight:bold;font-size:20px">
-                                        关于 <span style="font-weight:300;font-size:16px">ABOUT US</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-8 col-md-8">
-                                <!-- Main-menu -->
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">首页</a></li>
-                                            <li><a href="#product">产品与服务</a></li>
-                                            <li><a href="./download_center.html">下载中心</a></li>
-                                            <li><a href="#about">新闻资讯</a></li>
-                                            <li><a href="#feedback">意见建议</a>
-                                            </li>
-                                            <!-- <li><a href="#">Pages</a>
+      <!-- Header Start -->
+      <div class="header-area">
+        <div class="main-header" style="background-color: rgba(0, 0, 0, 0.2)">
+          <div class="header-bottom header-sticky">
+            <div class="container-fluid">
+              <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-xl-2 col-lg-1 col-md-1">
+                  <div class="logo sticky-style-1" id="logoId">
+                    <span id="imageLog">
+                      <img src="assets/img/logo/导航栏-icon- logo.png" alt="" />
+                    </span>
+                    <span
+                      id="productionLog"
+                      style="font-weight: bold; font-size: 20px"
+                    >
+                      产品
+                      <span style="font-weight: 300; font-size: 16px"
+                        >PRODUCT</span
+                      >
+                    </span>
+                    <span
+                      id="aboutLog"
+                      style="font-weight: bold; font-size: 20px"
+                    >
+                      关于
+                      <span style="font-weight: 300; font-size: 16px"
+                        >ABOUT US</span
+                      >
+                    </span>
+                  </div>
+                </div>
+                <div class="col-xl-7 col-lg-8 col-md-8">
+                  <!-- Main-menu -->
+                  <div class="main-menu f-right d-none d-lg-block">
+                    <nav>
+                      <ul id="navigation">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#product">产品与服务</a></li>
+                        <li><a href="./download_center.html">下载中心</a></li>
+                        <li><a href="#about">新闻资讯</a></li>
+                        <li><a href="#feedback">意见建议</a></li>
+                        <!-- <li><a href="#">Pages</a>
                                                 <ul class="submenu">
                                                     <li><a href="contact.html">Contact</a></li>
                                                     <li><a href="elements.html">Element</a></li>
                                                     <li><a href="case_details.html">Case Details</a></li>
                                                 </ul>
                                             </li> -->
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 col-md-3">
-                                <div class="header-right-btn f-right d-none d-lg-block contact">
-                                    <a href="#">
-                                        <img src="assets/img/logo/导航栏- icon-联系方式.png" alt="" id="contactlog">
-                                        &nbsp;&nbsp;
-                                        <span style="margin-left:5px">8665-9577</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
+                <div class="col-xl-3 col-lg-3 col-md-3">
+                  <div
+                    class="header-right-btn f-right d-none d-lg-block contact"
+                  >
+                    <a href="#">
+                      <img
+                        src="assets/img/logo/导航栏- icon-联系方式.png"
+                        alt=""
+                        id="contactlog"
+                      />
+                      &nbsp;&nbsp;
+                      <span style="margin-left: 5px">
+                        <a href="tel:8665-9577">8665-9577</a></span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <!-- Mobile Menu -->
+                <div class="col-12">
+                  <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Header End -->
+      </div>
+      <!-- Header End -->
     </header>
 
     <main>
-
-        <!-- slider Area Start-->
-        <div class="slider-area ">
-            <!-- Mobile Menu -->
-            <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center"
-                    data-background="assets/img/banner/three_men_banner.png">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-8">
-                                <div class="hero__caption">
-                                    <h1 data-animation="fadeInLeft" data-delay=".6s" style="width: 490px;height: 92px;font-size: 50px; font-family: PingFangSC-Semibold, PingFang SC;
-                                    font-weight: 600; color: #FFFFFF; line-height: 92px; margin-bottom: 31px"
-                                        id='provideService'>为您提供最优服务
-                                    </h1>
-                                    <p data-animation="fadeInLeft" data-delay=".4s" style="font-size: 10px;font-family: PingFangSC-Regular, PingFang SC;font-weight: 400;
-                                    color: #FFFFFF;line-height: 31px;letter-spacing: 12px;margin-bottom: 31px">3MEN
-                                        TECHNOLOGY</p>
-                                    <!-- Hero-btn -->
-                                    <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
-                                        <a href="download_center.html" class="btn hero-btn product-btn" style="">产品下载</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slider Area End-->
-
-        <a name="product"></a>
-        <!-- Team-profile Start -->
-        <div class="team-profile team-padding" id="teamProfile">
+      <!-- slider Area Start-->
+      <div class="slider-area">
+        <!-- Mobile Menu -->
+        <div class="slider-active">
+          <div
+            class="single-slider slider-height d-flex align-items-center"
+            data-background="assets/img/banner/three_men_banner.png"
+          >
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-profile mb-30">
-                            <!-- Front -->
-                            <div class="single-profile-front">
-                                <div class="profile-img">
-                                    <img src="assets/img/team/工资业务1.png" alt="">
-                                </div>
-                                <div class="profile-caption">
-                                    <h4><a href="#"><span class="gongziyewu">工资业务</span></a></h4>
-                                    <p>四川省直机关事业单位工资信息管理系统</p>
-                                </div>
-                            </div>
-                        </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8">
+                  <div class="hero__caption">
+                    <h1
+                      data-animation="fadeInLeft"
+                      data-delay=".6s"
+                      style="
+                        width: 490px;
+                        height: 92px;
+                        font-size: 50px;
+                        font-family: PingFangSC-Semibold, PingFang SC;
+                        font-weight: 600;
+                        color: #ffffff;
+                        line-height: 92px;
+                        margin-bottom: 31px;
+                      "
+                      id="provideService"
+                    >
+                      为您提供最优服务
+                    </h1>
+                    <p
+                      data-animation="fadeInLeft"
+                      data-delay=".4s"
+                      style="
+                        font-size: 10px;
+                        font-family: PingFangSC-Regular, PingFang SC;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 31px;
+                        letter-spacing: 12px;
+                        margin-bottom: 31px;
+                      "
+                    >
+                      3MEN TECHNOLOGY
+                    </p>
+                    <!-- Hero-btn -->
+                    <div
+                      class="hero__btn"
+                      data-animation="fadeInLeft"
+                      data-delay=".8s"
+                    >
+                      <a
+                        href="download_center.html"
+                        class="btn hero-btn product-btn"
+                        style=""
+                        >产品下载</a
+                      >
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-profile mb-30">
-                            <!-- Front -->
-                            <div class="single-profile-front">
-                                <div class="profile-img">
-                                    <img src="assets/img/team/工资业务2.png" alt="">
-                                </div>
-                                <div class="profile-caption">
-                                    <h4><a href="#"><span class="gongziyewu">工资业务</span></a></h4>
-                                    <p>成都市工资信息管理系统</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-profile mb-30">
-                            <!-- Back -->
-                            <div class="single-profile-back-last download-center-div" style="border: 4px solid #A163A9">
-                                <h2>下载中心</h2>
-                                <ul>
-                                    <!--<li class="li-order"><a class="link" href="./sheng_direct.html">省直属单位下载 »</a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider Area End-->
+
+      <a name="product"></a>
+      <!-- Team-profile Start -->
+      <div class="team-profile team-padding" id="teamProfile">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-profile mb-30">
+                <!-- Front -->
+                <div class="single-profile-front">
+                  <div class="profile-img">
+                    <img src="assets/img/team/工资业务1.png" alt="" />
+                  </div>
+                  <div class="profile-caption">
+                    <h4>
+                      <a href="#"><span class="gongziyewu">工资业务</span></a>
+                    </h4>
+                    <p>四川省直机关事业单位工资信息管理系统</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-profile mb-30">
+                <!-- Front -->
+                <div class="single-profile-front">
+                  <div class="profile-img">
+                    <img src="assets/img/team/工资业务2.png" alt="" />
+                  </div>
+                  <div class="profile-caption">
+                    <h4>
+                      <a href="#"><span class="gongziyewu">工资业务</span></a>
+                    </h4>
+                    <p>成都市工资信息管理系统</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-profile mb-30">
+                <!-- Back -->
+                <div
+                  class="single-profile-back-last download-center-div"
+                  style="border: 4px solid #a163a9"
+                >
+                  <h2>下载中心</h2>
+                  <ul>
+                    <!--<li class="li-order"><a class="link" href="./sheng_direct.html">省直属单位下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./chengdu_direct.html">成都市直属单位及区县下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./meishan_direct.html">眉山市直属单位及区县升级程序下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./dazhou_direct.html">达州市直属单位升级程序下载 »</a></li>
                                     <li class="li-order"><a class="link" href="./tool.html">常用工具下载 »</a></li>-->
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('sheng')"
-                                            href="./download_center.html">省直属单位下载
-                                            »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('chengdu')"
-                                            href="./download_center.html">成都市直属单位及区县下载
-                                            »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('meishang')"
-                                            href="./download_center.html">眉山市直属单位及区县升级程序下载
-                                            »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('dazhou')"
-                                            href="./download_center.html">达州市直属单位升级程序下载
-                                            »</a></li>
-                                    <li class="li-order"><a class="link" onclick="setDownloadType('tool')"
-                                            href="./download_center.html">常用工具下载
-                                            »</a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <li class="li-order">
+                      <a
+                        class="link"
+                        onclick="setDownloadType('sheng')"
+                        href="./download_center.html"
+                        >省直属单位下载 »</a
+                      >
+                    </li>
+                    <li class="li-order">
+                      <a
+                        class="link"
+                        onclick="setDownloadType('chengdu')"
+                        href="./download_center.html"
+                        >成都市直属单位及区县下载 »</a
+                      >
+                    </li>
+                    <li class="li-order">
+                      <a
+                        class="link"
+                        onclick="setDownloadType('meishang')"
+                        href="./download_center.html"
+                        >眉山市直属单位及区县升级程序下载 »</a
+                      >
+                    </li>
+                    <li class="li-order">
+                      <a
+                        class="link"
+                        onclick="setDownloadType('dazhou')"
+                        href="./download_center.html"
+                        >达州市直属单位升级程序下载 »</a
+                      >
+                    </li>
+                    <li class="li-order">
+                      <a
+                        class="link"
+                        onclick="setDownloadType('tool')"
+                        href="./download_center.html"
+                        >常用工具下载 »</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Team-profile End-->
+      </div>
+      <!-- Team-profile End-->
 
-        <!-- We Trusted Start-->
-        <div class="we-trusted-area trusted-padding">
-            <div class="container">
-                <div class="row" style="margin-left: 0; margin-right: 0;">
-                    <div class="col-xl-6 col-lg-6" style="padding:0px">
-                        <div class="trusted-img">
-                            <img src="assets/img/team/图片-公司介绍1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6" style="padding:0px;">
-                        <div style="padding-left:52px;display:flex;flex-direction: column">
-                            <h2 style="margin-bottom: 30px">我们服务超过60000+客户</h2>
-                            <p>
-                                四川省三夫科技开发有限公司成立于1999年，是一家从事计算机软件及互联网产品研发的科技企业。公司拥有完善的服务网络体系、丰富的行业经验积累、
-                                优秀的人才储备、持续的研发创新能力、经过二十余年发展、已成为专业的政务行业信息化解决方案提供商。</p>
-                            <p style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin: 0;">
-                                在工资业务领域，三夫科技打造的工资业务信息化整体解决方案长期服务于四川省人社厅、四川省委组织部、成都市人社局、成都市委组织部、
-                                四川省税务局等客户，覆盖用户单位60000多余家，积累数据约400GB，见证了工资业务二十年来的发展演进。
-                            </p>
-                            <a href="javascript:void()" class="button_more" style="margin-left: auto;margin-top: 10px;">了解更多</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="margin-left: 0; margin-right: 0;">
-                    <div class="col-xl-6 col-lg-6" style="padding:0px">
-                        <div style="padding-right:52px;display:flex;flex-direction: column;padding-top: 30px">
-                            <h2 style="margin-bottom: 30px">荣誉资质</h2>
-                            <p>研制完成了《三夫网吧智能监查管理系统》、《精通软件——成都工资福利离退休管理系统》、《四川省机关事业单位工资信息管理系统》、《交通违章摄像取证信息管理系统》、《四川省公共图书馆业务管理系统》、
-                                《四川省高校及中专招生信息采集系统》、《四川省移动通信公司人力资源测评系统等》
-                            </p>
-                            <a href="javascript:void()" class="button_more" style="margin-right: auto">了解更多</a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6" style="padding:0px">
-                        <div class="trusted-img">
-                            <img src="assets/img/team/图片-公司介绍2.png" alt="">
-                        </div>
-                    </div>
-                </div>
+      <!-- We Trusted Start-->
+      <div class="we-trusted-area trusted-padding">
+        <div class="container">
+          <div class="row" style="margin-left: 0; margin-right: 0">
+            <div class="col-xl-6 col-lg-6" style="padding: 0px">
+              <div class="trusted-img">
+                <img src="assets/img/team/图片-公司介绍1.png" alt="" />
+              </div>
             </div>
-
-        </div>
-        <!-- We Trusted End-->
-
-        <a name="about"></a>
-        <!-- services Area Start-->
-        <div class="services-area section-padding2">
-            <div class="container">
-                <!-- section tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <h2 style="margin-bottom:20px;font-size:40px;font-weight: 600">我们的服务</h2>
-                            <h5 style="font-size: 24px;margin-bottom: 49px;font-weight: 300">Our Services</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-icon" id="our_service_1">
-                                <!--<span class="flaticon-checklist"></span>-->
-                                <img id="our_service_1_1" src="assets/img/team/icon-upgrade-service.png" alt="">
-                                <img id="our_service_1_2" src="assets/img/team/icon-upgrade-service-selected.png"
-                                    alt="">
-                            </div>
-                            <div class="services-caption" style="margin-top:38px">
-                                <h4 style="font-weight:bold">升级服务</h4>
-                                <p>根据业务需求持续不断对系统进行优化和调整</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-icon" id="our_service_2">
-                                <!--<span class="flaticon-audit"></span>-->
-                                <img id="our_service_2_1" src="assets/img/team/icon-document-service.png" alt="">
-                                <img id="our_service_2_2" src="assets/img/team/icon-document-service-selected.png"
-                                    alt="">
-                            </div>
-                            <div class="services-caption" style="margin-top:38px">
-                                <h4 style="font-weight:bold">文档服务</h4>
-                                <p>及时更新文档并提供给经办人员作为指导</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-services text-center mb-30">
-                            <div class="services-icon" id="our_service_3">
-                                <!--<span class="flaticon-checklist-1"></span>-->
-                                <img id="our_service_3_1" src="assets/img/team/icon-upgrade-service.png" alt="">
-                                <img id="our_service_3_2" src="assets/img/team/icon-upgrade-service-selected.png"
-                                    alt="">
-                            </div>
-                            <div class="services-caption" style="margin-top:38px">
-                                <h4 style="font-weight:bold">数据库系统维护服务</h4>
-                                <p>对工资系统数据服务器中的数据进行定期维护，确保系统稳定</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- button -->
-                <div class="row justify-content-center">
-                    <div class="room-btn">
-                        <!--<a href="services.html" class="border-btn">More Services</a>-->
-                        <a href="javascript:void()" class="button_more" style="margin-left: auto">了解更多</a>
-                    </div>
-                </div>
+            <div class="col-xl-6 col-lg-6" style="padding: 0px">
+              <div
+                style="
+                  padding-left: 52px;
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <h2 style="margin-bottom: 30px">我们服务超过60000+客户</h2>
+                <p>
+                  四川省三夫科技开发有限公司成立于1999年，是一家从事计算机软件及互联网产品研发的科技企业。公司拥有完善的服务网络体系、丰富的行业经验积累、
+                  优秀的人才储备、持续的研发创新能力、经过二十余年发展、已成为专业的政务行业信息化解决方案提供商。
+                </p>
+                <p
+                  style="
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0;
+                  "
+                >
+                  在工资业务领域，三夫科技打造的工资业务信息化整体解决方案长期服务于四川省人社厅、四川省委组织部、成都市人社局、成都市委组织部、
+                  四川省税务局等客户，覆盖用户单位60000多余家，积累数据约400GB，见证了工资业务二十年来的发展演进。
+                </p>
+                <a
+                  href="javascript:void()"
+                  class="button_more"
+                  style="margin-left: auto; margin-top: 10px"
+                  >了解更多</a
+                >
+              </div>
             </div>
-        </div>
-        <!-- services Area End-->
-
-        <!-- Recent Area Start -->
-        <div class="recent-area section-paddingt">
-            <div class="container">
-                <!-- section tittle -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-tittle text-center">
-                            <h2 style="margin-bottom:20px;font-size:40px">新闻资讯</h2>
-                            <h5 style="font-size: 24px;margin-bottom: 49px">News and Information</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-recent-cap mb-30">
-                            <div class="recent-img">
-                                <img src="assets/img/team/四川省事业单位工资基金管理系统 上线.png" alt="">
-                            </div>
-                            <div class="recent-cap">
-                                <span style="color:#333333;font-size: 16px">四川省事业单位工资基金管理系统上线</span>
-                                <p style="font-size:14px;font-weight:300;color:#333333">2021-03-02</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-recent-cap mb-30">
-                            <div class="recent-img">
-                                <img src="assets/img/team/四川省事业单位工资基金管理系统 上线.png" alt="">
-                            </div>
-                            <div class="recent-cap">
-                                <span style="color:#333333;font-size: 16px">四川省事业单位工资基金管理系统上线</span>
-                                <p style="font-size:14px;font-weight:300;color:#333333">2021-03-02</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-recent-cap mb-30">
-                            <div class="recent-img">
-                                <img src="assets/img/team/四川省事业单位工资基金管理系统 上线.png" alt="">
-                            </div>
-                            <div class="recent-cap">
-                                <span style="color:#333333;font-size: 16px">四川省事业单位工资基金管理系统上线</span>
-                                <p style="font-size:14px;font-weight:300;color:#333333">2021-03-02</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="row" style="margin-left: 0; margin-right: 0">
+            <div class="col-xl-6 col-lg-6" style="padding: 0px">
+              <div
+                style="
+                  padding-right: 52px;
+                  display: flex;
+                  flex-direction: column;
+                  padding-top: 30px;
+                "
+              >
+                <h2 style="margin-bottom: 30px">荣誉资质</h2>
+                <p>
+                  研制完成了《三夫网吧智能监查管理系统》、《精通软件——成都工资福利离退休管理系统》、《四川省机关事业单位工资信息管理系统》、《交通违章摄像取证信息管理系统》、《四川省公共图书馆业务管理系统》、
+                  《四川省高校及中专招生信息采集系统》、《四川省移动通信公司人力资源测评系统等》
+                </p>
+                <a
+                  href="javascript:void()"
+                  class="button_more"
+                  style="margin-right: auto"
+                  >了解更多</a
+                >
+              </div>
             </div>
-        </div>
-        <!-- Recent Area End-->
-
-        <a name="feedback"></a>
-        <!-- Request Back Start -->
-        <div class="request-back-area section-padding30" style="background-color: #613183;">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-4 col-lg-5 col-md-5">
-                        <div class="request-content">
-                            <h3>用户声音</h3>
-                            <p>若您有疑问或建议，请您留下联系方式，我们将尽快与您取得联系</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7 col-md-7">
-                        <!-- Contact form Start -->
-                        <div class="form-wrapper">
-                            <form id="contact-form" action="#" method="POST">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="form-box  mb-30">
-                                            <input type="text" name="name" placeholder="姓名"
-                                                style="border-color:#FFFFFF">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="form-box mb-30">
-                                            <input type="text" name="email" placeholder="电话"
-                                                style="border-color:#FFFFFF">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 mb-30">
-                                        <div class="select-itms">
-                                            <select name="select" id="select1">
-                                                <option value="">-请选择服务-</option>
-                                                <option value="">省直单位</option>
-                                                <option value="">成都市及区县</option>
-                                                <option value="">地方税务</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4">
-                                        <button type="submit" class="send-btn">发送</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div> <!-- Contact form End -->
-                </div>
+            <div class="col-xl-6 col-lg-6" style="padding: 0px">
+              <div class="trusted-img">
+                <img src="assets/img/team/图片-公司介绍2.png" alt="" />
+              </div>
             </div>
+          </div>
         </div>
-        <!-- Request Back End -->
+      </div>
+      <!-- We Trusted End-->
 
+      <a name="about"></a>
+      <!-- services Area Start-->
+      <div class="services-area section-padding2">
+        <div class="container">
+          <!-- section tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <h2
+                  style="margin-bottom: 20px; font-size: 40px; font-weight: 600"
+                >
+                  我们的服务
+                </h2>
+                <h5
+                  style="font-size: 24px; margin-bottom: 49px; font-weight: 300"
+                >
+                  Our Services
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-services text-center mb-30">
+                <div class="services-icon" id="our_service_1">
+                  <!--<span class="flaticon-checklist"></span>-->
+                  <img
+                    id="our_service_1_1"
+                    src="assets/img/team/icon-upgrade-service.png"
+                    alt=""
+                  />
+                  <img
+                    id="our_service_1_2"
+                    src="assets/img/team/icon-upgrade-service-selected.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services-caption" style="margin-top: 38px">
+                  <h4 style="font-weight: bold">升级服务</h4>
+                  <p>根据业务需求持续不断对系统进行优化和调整</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-services text-center mb-30">
+                <div class="services-icon" id="our_service_2">
+                  <!--<span class="flaticon-audit"></span>-->
+                  <img
+                    id="our_service_2_1"
+                    src="assets/img/team/icon-document-service.png"
+                    alt=""
+                  />
+                  <img
+                    id="our_service_2_2"
+                    src="assets/img/team/icon-document-service-selected.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services-caption" style="margin-top: 38px">
+                  <h4 style="font-weight: bold">文档服务</h4>
+                  <p>及时更新文档并提供给经办人员作为指导</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-services text-center mb-30">
+                <div class="services-icon" id="our_service_3">
+                  <!--<span class="flaticon-checklist-1"></span>-->
+                  <img
+                    id="our_service_3_1"
+                    src="assets/img/team/icon-upgrade-service.png"
+                    alt=""
+                  />
+                  <img
+                    id="our_service_3_2"
+                    src="assets/img/team/icon-upgrade-service-selected.png"
+                    alt=""
+                  />
+                </div>
+                <div class="services-caption" style="margin-top: 38px">
+                  <h4 style="font-weight: bold">数据库系统维护服务</h4>
+                  <p>对工资系统数据服务器中的数据进行定期维护，确保系统稳定</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="row justify-content-center">
+            <div class="room-btn">
+              <!--<a href="services.html" class="border-btn">More Services</a>-->
+              <a
+                href="javascript:void()"
+                class="button_more"
+                style="margin-left: auto"
+                >了解更多</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- services Area End-->
+
+      <!-- Recent Area Start -->
+      <div class="recent-area section-paddingt">
+        <div class="container">
+          <!-- section tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <h2 style="margin-bottom: 20px; font-size: 40px">新闻资讯</h2>
+                <h5 style="font-size: 24px; margin-bottom: 49px">
+                  News and Information
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-recent-cap mb-30">
+                <div class="recent-img">
+                  <img
+                    src="assets/img/team/四川省事业单位工资基金管理系统 上线.png"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-cap">
+                  <span style="color: #333333; font-size: 16px"
+                    >四川省事业单位工资基金管理系统上线</span
+                  >
+                  <p style="font-size: 14px; font-weight: 300; color: #333333">
+                    2021-03-02
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-recent-cap mb-30">
+                <div class="recent-img">
+                  <img
+                    src="assets/img/team/四川省事业单位工资基金管理系统 上线.png"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-cap">
+                  <span style="color: #333333; font-size: 16px"
+                    >四川省事业单位工资基金管理系统上线</span
+                  >
+                  <p style="font-size: 14px; font-weight: 300; color: #333333">
+                    2021-03-02
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="single-recent-cap mb-30">
+                <div class="recent-img">
+                  <img
+                    src="assets/img/team/四川省事业单位工资基金管理系统 上线.png"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-cap">
+                  <span style="color: #333333; font-size: 16px"
+                    >四川省事业单位工资基金管理系统上线</span
+                  >
+                  <p style="font-size: 14px; font-weight: 300; color: #333333">
+                    2021-03-02
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recent Area End-->
+
+      <a name="feedback"></a>
+      <!-- Request Back Start -->
+      <div
+        class="request-back-area section-padding30"
+        style="background-color: #613183"
+      >
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-xl-4 col-lg-5 col-md-5">
+              <div class="request-content">
+                <h3>用户声音</h3>
+                <p>
+                  若您有疑问或建议，请您留下联系方式，我们将尽快与您取得联系
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+              <!-- Contact form Start -->
+              <div class="form-wrapper">
+                <form id="contact-form" action="#" method="POST">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-box mb-30">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="姓名"
+                          style="border-color: #ffffff"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-box mb-30">
+                        <input
+                          type="text"
+                          name="email"
+                          placeholder="电话"
+                          style="border-color: #ffffff"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 mb-30">
+                      <div class="select-itms">
+                        <select name="select" id="select1">
+                          <option value="">-请选择服务-</option>
+                          <option value="">省直单位</option>
+                          <option value="">成都市及区县</option>
+                          <option value="">地方税务</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                      <button type="submit" class="send-btn">发送</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- Contact form End -->
+          </div>
+        </div>
+      </div>
+      <!-- Request Back End -->
     </main>
     <footer>
-        <!-- Footer Start-->
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="single-footer-caption mb-30">
-                                <!-- logo -->
-                                <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/team/版权-二维码.png" alt=""
-                                            style="width: 200px;"></a>
-                                </div>
-                                <div class="footer-tittle">
-                                    <div class="footer-pera">
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <!-- Footer Start-->
+      <div class="footer-area footer-padding">
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+              <div class="single-footer-caption mb-50">
+                <div class="single-footer-caption mb-30">
+                  <!-- logo -->
+                  <div class="footer-logo">
+                    <a href="index.html"
+                      ><img
+                        src="assets/img/team/版权-二维码.png"
+                        alt=""
+                        style="width: 200px"
+                    /></a>
+                  </div>
+                  <div class="footer-tittle">
+                    <div class="footer-pera">
+                      <p></p>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>公司</h4>
-                                <ul>
-                                    <li><a href="index.html">首页</a></li>
-                                    <li><a href="#about">关于</a></li>
-                                    <li><a href="download_center.html">下载中心</a></li>
-                                    <li><a href="#feedback"> 联系我们</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>服务</h4>
-                                <ul>
-                                    <li><a href="#about">升级服务</a></li>
-                                    <li><a href="#about">文档服务</a></li>
-                                    <li><a href="#about">数据库系统维护服务</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>联系我们</h4>
-                                <ul>
-                                    <li><a href="#">电话：028-86659577转801-806</a></li>
-                                    <li><a href="#">传真：028-86659577</a></li>
-                                    <li><a href="#">地址：成都市成华区建设路10号万科钻石广场A座15F</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <!-- footer-bottom aera -->
-        <div class="footer-bottom-area footer-bg">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right text-center">
-                                <p>
-                                    Copyright &copy;
-                                    <script>document.write(new Date().getFullYear());</script> All rights reserved
-                                </p>
-                                <p>
-                                    ICP备案号：<a href="http://beian.miit.gov.cn/" target="_blank">蜀ICP备19039723号-1</a>　　
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+              <div class="single-footer-caption mb-50">
+                <div class="footer-tittle">
+                  <h4>公司</h4>
+                  <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="download_center.html">下载中心</a></li>
+                    <li><a href="#feedback"> 联系我们</a></li>
+                  </ul>
                 </div>
+              </div>
             </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+              <div class="single-footer-caption mb-50">
+                <div class="footer-tittle">
+                  <h4>服务</h4>
+                  <ul>
+                    <li><a href="#about">升级服务</a></li>
+                    <li><a href="#about">文档服务</a></li>
+                    <li><a href="#about">数据库系统维护服务</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="single-footer-caption mb-50">
+                <div class="footer-tittle">
+                  <h4>联系我们</h4>
+                  <ul>
+                    <li><a href="#">电话：028-86659577转801-806</a></li>
+                    <li><a href="#">传真：028-86659577</a></li>
+                    <li>
+                      <a href="#"
+                        >地址：成都市成华区建设路10号万科钻石广场A座15F</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Footer End-->
+      </div>
+      <!-- footer-bottom aera -->
+      <div class="footer-bottom-area footer-bg">
+        <div class="container">
+          <div class="footer-border">
+            <div class="row d-flex align-items-center">
+              <div class="col-xl-12">
+                <div class="footer-copy-right text-center">
+                  <p>
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved
+                  </p>
+                  <p>
+                    ICP备案号：<a
+                      href="http://beian.miit.gov.cn/"
+                      target="_blank"
+                      >蜀ICP备19039723号-1</a
+                    >　　
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End-->
     </footer>
 
     <!-- JS here -->
@@ -887,11 +1093,9 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
-        function setDownloadType(type) {
-            sessionStorage.setItem("downloadType", type);
-        }
+      function setDownloadType(type) {
+        sessionStorage.setItem("downloadType", type);
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
